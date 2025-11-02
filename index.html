@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="signUp">
+        <h1>Sign Up</h1>
+        <h3>Name</h3>
+        <input type="name" id="userName" placeholder="Enter your Username" />
+        <h3>Email</h3>
+        <input type="email" id="signUpEmail" placeholder="Enter your Email" />
+        <h3>Password</h3>
+        <input
+          type="password"
+          id="signUpPassword"
+          placeholder="Enter your Password"
+        />
+        <h3>Phone Number</h3>
+        <input type="text" id="number" placeholder="Enter your Phone Number" />
+        <h3>Date Of Birth</h3>
+        <input type="date" id="dateOfBirth" />
+        <h3>Select Gender</h3>
+        <select id="selectGender">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <button onclick="signUpBtn()">Sign Up</button>
+        <p id="signUpSwitch" onclick="switchbtn()">Already have an account</p>
+      </div>
+      <div id="loginForm">
+        <h1>Login</h1>
+        <h3>Email</h3>
+        <input type="email" id="loginEmail" placeholder="Enter your Email" />
+        <h3>Password</h3>
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your Password"
+        />
+        <button onclick="loginBtn()">Login</button>
+        <p id="loginSwitch" onclick="switchbtn()">
+          Don't have an acount ? SignUp
+        </p>
+      </div>
+
+      <h2 id="welcomeUser"></h2>
+      <h1 id="todoh1">Todo App</h1>
+      <div class="todo-container">
+        <input type="text" id="todoInput" placeholder="Add your items" />
+        <button id="todoAddBtn" onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskLists"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
